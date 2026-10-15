@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>venta de boletos</title>
+    <link rel="stylesheet" href="boletos.css">
+</head>
+<body>
+    <header>
+        <h1>NANA LIVE</h1>
+        <p>ROCK.J-POP.ANNA TSUCHIYA</p>
+        <a href="index.html">volver al inicio</a>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>RESERVA TU BOLETO</h2>
+            <p>Completa tus datos para obtener tu entrada</p>
+
+            <form id="formulario">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Ingrese su correo</label>
+                <input type="email"  id="correo" required>
+
+                <label for="numero">Numero telefonico</label>
+                <input type="tel" id="numero" required>
+
+                <label for="pago">Metodo de pago</label>
+                <select id="pago"required>
+                    <option value="">Selecciona una opcion</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="qr">Codigo QR</option>
+                </select>
+
+                <button type="submit">GENERAR BOLETO</button>
+            </form>
+
+        </section>
+
+        <section class="resultado" id="resultado">
+            <h2>Tu boleto esta listo</h2>
+
+            <div class="boleto" >
+                <p class="etiqueta">ENTRADA AL CONCIERTO</p>
+                <h3>ANNA TSUCHIYA</h3>
+                <p>Special Live: NANA & BLACK STONES</p>
+
+                <div class="datosconcierto">
+                    <p><strong>fecha:</strong><strong>20 de diciembre 2026</strong><strong>8:00 p.m</strong><strong>lugar</strong><strong>TokyoCenter</strong></p>
+                </div>
+                <hr>
+
+                <p><strong>Nombre:</strong><span id="mostrarnombre"></span></p>
+
+                <p><strong>correo</strong><span id="mostrarcorreo"></span></p>
+
+                <p><strong>telefono:</strong><span id="mostrarnumero"></span></p>
+
+                <p><strong>Pago elegido</strong><span id="mostrarpago"></span></p>
+
+                <p class="codigo">NANA-2026-001</p>
+               
+
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const formulario=document.getElementById("formulario")
+        const resultado=document.getElementById("resultado")
+
+        formulario.addEventListener("submit",function(evento){
+            evento.preventDefault();
+
+            document.getElementById("mostrarnombre").textContent=
+            document.getElementById("nombre").value
+
+            document.getElementById("mostrarcorreo").textContent=
+            document.getElementById("correo").value
+
+            document.getElementById("mostrarnumero").textContent=
+            document.getElementById("numero").value
+
+            document.getElementById("mostrarpago").textContent=
+            document.getElementById("pago").value
+
+            resultado.style.display="block"
+            resultado.scrollIntoView({behavior:"smooth"});
+            
+        })
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="venta.css">
+</head>
+<body>
+    <header>
+        <h1>Venta de discos fisicos y digitales de Anna</h1>
+        <a href="index.html">volver al inicio</a>
+        
+    </header>
+    
+
+    <main>
+        <section class="presentacion">
+            <h2>Tienda musical</h2>
+            <p>La musica de Anna Tsuchiya</p>
+
+        </section>
+
+        <section class="tienda">
+            <h2>CATALOGO</h2>
+            <p class="descripcion">Explora a tu seleccion</p>
+            <div class="controles">
+                <button type="button" onclick="moverCarrusel(-1)"></button>
+                <span>DESLIZA PARA EXPLORAR</span>
+                <button type="button" onclick="moverCarrusel(1)"></button>
+
+            </div>
+
+            <div class="carrusel" id="carrusel">
+
+                <article class="disco">
+                    <img src="anna fot/17d23b9b74446dea982e669220087453.jpg" alt="portada">
+                    <h3>ROSE</h3>
+                    <p>Anna Tsuchiya NANA</p>
+                    <span class="formato">Disco Fisico</span>
+                    <p class="precio">S/ 45.00</p>
+                </article>
+
+                <article class="disco">
+                    <img src="anna fot/mona.jpg" alt="portada">
+                    <h3>LUCY</h3>
+                    <p>Anna Tsuchiya</p>
+                    <span class="formato">Disco Fisica</span>
+                    <p class="precio">S/35.00</p>
+                </article>
+
+                <article class="disco">
+                    <img src="anna fot/RE.jpg" alt="portada">
+                    <h3>CARRY ON</h3>
+                    <p>Rock y musica de videojuegos</p>
+                    <span class="formato">Disco Fisico</span>
+                    <p class="precio">S/59.99</p>
+
+                </article>
+
+                <article class="disco">
+                    <img src="anna fot/d923eddf59f665af69b62cda84a8550c.jpg" alt="portada">
+                    <h3>TAKE ME OUT</h3>
+                    <p>Anna Tsuchiya inspi' Nana</p>
+                    <span class="formato">Disco Digital</span>
+                    <p class="precio">S/35.00</p>
+
+                </article>
+
+                <article class="disco">
+                    <img src="anna fot/YOU.jpg" alt="portada">
+                    <h3>WITHOUT YOU</h3>
+                    <p>Anna Tsuchiya</p>
+                    <span class="formato">Disco Digital</span>
+                    <p class="precio">S/19.99</p>
+
+                </article>
+                
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>NANA RECORDS| Proyecto de desarrollo de Software</p>
+    </footer>
+
+    <script>
+        function moverCarrusel(direccion){
+            let carrusel=document.getElementById("carrusel");
+
+            carrusel.scrollBy({
+                left:direccion*250,
+                behavior:"smooth"
+            })
+        }
+    </script>
+    
+</body>
+</html>

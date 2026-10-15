@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+    background-image: url("anna\ fot/Nana.jpe");
+    background-size:contain;
+    background-attachment: fixed;
+
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+header{
+    text-align: center;
+    padding: 50px;
+    border-bottom: 1px solid #333;
+
+}
+
+header h1{
+    font-size: 60px;
+    letter-spacing: 8px;
+    color: #b30000;
+    text-shadow: 0 0 15px #b30000;
+
+}
+header p{
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #888;
+
+
+}
+
+nav{
+    margin-top: 40px;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition: 0.3s;
+    display: inline-block;
+
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+#inicio{
+    padding: 35px;
+    text-align: center;
+    border-bottom: 1px solid #888;
+}
+
+#inicio h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #b30000;
+}
+
+#inicio h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #b30000;
+    margin: 12px auto 0;
+}
+
+#inicio p{
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.contenedor-canciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+
+}
+.contenedor-canciones article{
+    width: 380px;
+    background-color: #151515;
+    padding: 20px;
+    border: 1px solid #333;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.contenedor-canciones article img{
+    width: 100%;
+    height:250px;
+    object-fit:initial;
+    border-radius: 8px;
+    transition: 0.3s;
+    
+}
+.contenedor-canciones img:hover{
+    transform: scale(1.2);
+}
+
+
+.contenedor-canciones article video{
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+
+}
+.contenedor-canciones video:hover{
+    box-shadow: 0 0 10px #b30000;
+}
+
+.contenedor-canciones article h3{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 15px 0;
+    min-height: 30px;
+    text-align: center;
+}
+article h3{
+    text-shadow: 0 0 30px white;
+}
+
+
+.contenedor-canciones article p{
+    color: #cccccc;
+    line-height: 1.6;
+    margin-top: 15px;
+    min-height: 80px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-canciones article:hover{
+    border-color: #b30000;
+    transition: 0.5s;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #b30000;
+    
+}
+#canciones h2{
+    text-align: center;
+    font-size: 40px;
+    color: #b30000;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #b30000;
+    padding-bottom: 15px;
+}
+#canciones{
+    padding: 60px 40px;
+}
+
+#artista{
+    margin: 60px 40px;
+    padding: 40px;
+    background-color: #151515;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 15px palevioletred;
+
+}
+#artista h2{
+    text-align: center;
+    color: #b30000;
+    font-size: 35px;
+    margin-bottom: 25px;
+
+}
+
+#artista h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #b30000;
+    margin: 12px auto 0;
+}
+#artista p{
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+}
+footer{
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: #0a0a0a;
+    border-top: 1px solid #333;
+}
+footer p{
+
+    color: #888;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.enlace2{
+    background-color:#333;
+    border-radius: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    width: 600px;
+    margin: 50px auto;
+}
+
+.enlace2 div{
+    box-sizing: border-box;
+    text-align:left;
+    
+}
+
+.enlace2 nav a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px white;
+}
+
+.enlace2 a{
+    color: black;
+    background-color: beige;
+    text-align: center;
+}
+
+/* PANTALLAS PEQUEÑAS */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .boleto {
+        padding: 18px;
+    }
+}
+
+

@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(anna\ fot/venta.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #201d25;
+    color: #554052;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 30px;
+    background-color: #201d25;
+    border-bottom: 4px solid #d98bab;
+}
+
+header h1 {
+    color: #b84c78;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+header p {
+    margin: 10px;
+    letter-spacing: 3px;
+    color: #78566f;
+}
+
+header a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #8d426b;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #d14e82;
+}
+
+main {
+    padding: 30px 15px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color:#e9dff5;
+    border: 2px solid #f2c6d9;
+    border-top: 5px solid #d98bab;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #e8c8d8;
+}
+
+.formulario h2,
+.resultado h2 {
+    color: #b84c78;
+    margin-bottom: 15px;
+}
+
+.formulario > p {
+    color: #92748a;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+label {
+    color: #76536d;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #fff8fb;
+    color: #554052;
+    border: 1px solid #e6b8cf;
+    border-radius: 10px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #c46c99;
+    box-shadow: 0 0 5px #edc1d7;
+}
+
+button {
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #302e30;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #bd648c;
+    transform: translateY(-2px);
+}
+
+.resultado {
+    display: none;
+    max-width: 500px;
+    margin: 35px auto;
+}
+
+.boleto {
+    padding: 25px;
+    text-align: left;
+    background: linear-gradient(135deg, #fffafd, #f8e5f0);
+    border: 2px dashed #ce7da3;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #e8c8d8;
+}
+
+.etiqueta {
+    color: #b84c78;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.boleto h3 {
+    margin: 15px 0;
+    color: #b84c78;
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.datosConcierto {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #f4dce9;
+    border-left: 4px solid #d98bab;
+    border-radius: 8px;
+}
+
+.boleto p {
+    margin-top: 10px;
+    overflow-wrap: anywhere;
+}
+
+.boleto hr {
+    margin: 20px 0;
+    border: 1px solid #e7bfd2;
+}
+
+.codigo {
+    margin-top: 25px !important;
+    color: #b84c78;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aviso {
+    color: #92748a;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer {
+    padding: 25px;
+    background-color: #f8dce8;
+    border-top: 3px solid #d98bab;
+    color: #78566f;
+}
+
+/* PANTALLAS PEQUEÑAS */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .boleto {
+        padding: 18px;
+    }
+}
