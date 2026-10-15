@@ -253,18 +253,75 @@ footer p{
     text-align: center;
 }
 
-/* PANTALLAS PEQUEÑAS */
+/* CELULARES */
 @media (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
     header h1 {
-        font-size: 30px;
+        font-size: 28px;
+        letter-spacing: 2px;
     }
 
-    .formulario {
-        padding: 20px;
+    header p {
+        font-size: 13px;
+        letter-spacing: 1px;
     }
 
-    .boleto {
-        padding: 18px;
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav a {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .contenedor-canciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cancion {
+        width: 100%;
+        max-width: 400px;
+        flex: none;
+        padding: 15px;
+    }
+
+    .cancion img,
+    .cancion video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cancion h3 {
+        font-size: 20px;
+    }
+
+    .cancion p {
+        font-size: 14px;
+    }
+
+    aside {
+        width: 100%;
+        max-width: 350px;
+        margin: 20px auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    footer {
+        padding: 20px 10px;
+        font-size: 13px;
     }
 }
 
