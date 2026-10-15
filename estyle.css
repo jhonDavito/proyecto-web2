@@ -265,23 +265,31 @@ footer p{
         letter-spacing: 2px;
     }
 
-    header p {
-        font-size: 13px;
-        letter-spacing: 1px;
-    }
-
-    nav {
+    header nav {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 12px;
     }
 
     nav a {
-        max-width: 100%;
+        margin: 0;
     }
 
     main {
         padding: 10px;
+    }
+
+    #inicio {
+        padding: 25px 10px;
+    }
+
+    #inicio h2 {
+        font-size: 25px;
+    }
+
+    #canciones {
+        padding: 20px 5px;
     }
 
     .contenedor-canciones {
@@ -289,39 +297,29 @@ footer p{
         align-items: center;
     }
 
-    .cancion {
+    .contenedor-canciones article {
         width: 100%;
-        max-width: 400px;
-        flex: none;
-        padding: 15px;
+        max-width: 380px;
     }
 
-    .cancion img,
-    .cancion video {
+    .contenedor-canciones article img,
+    .contenedor-canciones article audio {
         width: 100%;
-        max-width: 100%;
-        height: auto;
     }
 
-    .cancion h3 {
-        font-size: 20px;
-    }
-
-    .cancion p {
-        font-size: 14px;
-    }
-
-    aside {
+    .enlace2 {
         width: 100%;
-        max-width: 350px;
-        margin: 20px auto;
-        padding: 15px;
-        box-sizing: border-box;
+        max-width: 600px;
+        margin: 25px auto;
+    }
+
+    #artista {
+        margin: 20px 5px;
+        padding: 20px;
     }
 
     footer {
         padding: 20px 10px;
-        font-size: 13px;
     }
 }
 
